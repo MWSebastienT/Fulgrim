@@ -1,0 +1,53 @@
+{% extends "DestinyFinalBundle::layout.html.twig" %}
+{% block description %}Le Portail de Fulgrim{% endblock %}
+{% block title %}Fulgrim{% endblock %}
+{% block pageContent %}
+<!--Video Section-->
+<section class="content-section video-section">
+    <div class="pattern-overlay">
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=DnHZdI-mcVs&t=400s',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="https://i.imgur.com/9KQhhrK.png" alt="Smiley face" height="500" width="500">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Video Section Ends Here-->
+
+<section id="works"></section>
+<div class="container">
+    <div class="row mt mb">
+        <!--<h1>My Portfolio</h1>-->
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="gallery">
+                <img src="https://i.imgur.com/DJsijCT.jpg" class="img-responsive">
+                <a href="https://www.bungie.net/en/ClanV2?groupid=2677990" class="btn">Destiny 2</a>
+            </div>
+            <!--<div class="gallery">-->
+            <!--<a href="work.html"><img src="https://i.imgur.com/fnDAPCM.png" class="img-responsive"></a>-->
+            <!--</div>-->
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="gallery about">
+                <h3>A PROPOS DE FULGRIM</h3>
+                <p>Notre objectif commun est l'établissement d'une relation fraternelle solide, fer de lance de notre lutte impartiale contre l'envahisseur ! Vous apprenez de vos erreurs, mais aussi de celles de vos ennemis.
+                    Ce clan à vocation de rassembler une communauté de joueurs aussi bien débutants qu’aguerris, où l'entraide ne doit pas être une option. </p>
+                <p><small>Suivez nous:</small></p>
+                {#<a href="#" class="fa fa-facebook fa-2x"></a>#}
+                {#<a href="#" class="fa fa-twitter fa-2x"></a>#}
+                <a href="#" class="fa fa-youtube fa-2x"></a>
+                <a href="#" class="fa fa-twitch fa-2x"></a>
+            </div>
+            <!--<div class="gallery">-->
+            <!--<a href="work.html"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>-->
+            <!--</div>-->
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
+{% endblock %}
