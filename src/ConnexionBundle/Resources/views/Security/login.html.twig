@@ -1,0 +1,21 @@
+
+
+
+
+
+
+{% extends "DestinyFinalBundle::layout.html.twig" %}
+{% block title %}Destiny 2{% endblock %}
+{% block description %}Le Portail de Fulgrim{% endblock %}
+{% block pageContent %}
+    {% block fos_user_content %}
+        {% if error %}
+            <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
+        {% endif %}
+
+        {% include "ConnexionBundle:Security:login_content.html.twig" %}
+
+    {% endblock fos_user_content %}
+{% endblock %}
+
+
