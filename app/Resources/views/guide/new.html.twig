@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block pageContent %}
+    <h1>Guide</h1>
+<div class="container">
+    {{ form_start(form, {'attr': {'class': 'form-horizontal validation','data-toggle':'validator'}}) }}
+    <div class="form-group">
+        {{ form_label(form.url, "URL") }}
+        {{ form_errors(form.url) }}
+        {{ form_widget(form.url) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.name, "Nom") }}
+        {{ form_errors(form.name) }}
+        {{ form_widget(form.name) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.imageUrl, "Url de l'image") }}
+        {{ form_errors(form.imageUrl) }}
+        {{ form_widget(form.imageUrl) }}
+    </div>
+
+            <a href="{{ path('guide_index') }}" class="btn btn-default">Retour à la liste</a>
+            {{ form_widget(form.Valider, {'attr': {'class': 'btn btn-success'}}) }}
+    {{ form_end(form) }}
+</div>
+{% endblock %}
