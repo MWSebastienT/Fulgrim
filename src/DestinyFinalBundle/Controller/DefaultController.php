@@ -16,11 +16,11 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/destiny")
+     * @Route("/gallery", name="gallery_show")
      */
     public function destinyAction()
     {
-        return $this->render('DestinyFinalBundle:Destiny:index.html.twig');
+        return $this->render('DestinyFinalBundle:Destiny:gallery.html.twig');
     }
 
 

@@ -19,7 +19,7 @@ class AppKernel extends Kernel
             new DestinyFinalBundle\DestinyFinalBundle(),
             new AppBundle\AppBundle(),
             new \ConnexionBundle\ConnexionBundle(),
-
+            new AdminBundle\AdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
